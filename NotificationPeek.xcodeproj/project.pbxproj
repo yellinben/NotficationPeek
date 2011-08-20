@@ -1,0 +1,274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		369ED24513FF2556000707FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369ED24413FF2556000707FA /* Cocoa.framework */; };
+		369ED24F13FF2556000707FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 369ED24D13FF2556000707FA /* InfoPlist.strings */; };
+		369ED25813FF2572000707FA /* NotificationPeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 369ED25713FF2572000707FA /* NotificationPeek.m */; };
+		369ED25A13FF258C000707FA /* NotificationPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 369ED25913FF258B000707FA /* NotificationPanel.xib */; };
+		369ED25D13FF259C000707FA /* NotificationPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 369ED25C13FF259C000707FA /* NotificationPanelController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		369ED24113FF2556000707FA /* NotificationPeek.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationPeek.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		369ED24413FF2556000707FA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		369ED24713FF2556000707FA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		369ED24813FF2556000707FA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		369ED24913FF2556000707FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		369ED24C13FF2556000707FA /* NotificationPeek-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotificationPeek-Info.plist"; sourceTree = "<group>"; };
+		369ED24E13FF2556000707FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		369ED25013FF2556000707FA /* NotificationPeek-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NotificationPeek-Prefix.pch"; sourceTree = "<group>"; };
+		369ED25613FF2572000707FA /* NotificationPeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationPeek.h; sourceTree = "<group>"; };
+		369ED25713FF2572000707FA /* NotificationPeek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationPeek.m; sourceTree = "<group>"; };
+		369ED25913FF258B000707FA /* NotificationPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationPanel.xib; sourceTree = "<group>"; };
+		369ED25B13FF259C000707FA /* NotificationPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationPanelController.h; sourceTree = "<group>"; };
+		369ED25C13FF259C000707FA /* NotificationPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationPanelController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		369ED23E13FF2556000707FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369ED24513FF2556000707FA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		369ED23613FF2555000707FA = {
+			isa = PBXGroup;
+			children = (
+				369ED24A13FF2556000707FA /* NotificationPeek */,
+				369ED24313FF2556000707FA /* Frameworks */,
+				369ED24213FF2556000707FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		369ED24213FF2556000707FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				369ED24113FF2556000707FA /* NotificationPeek.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		369ED24313FF2556000707FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				369ED24413FF2556000707FA /* Cocoa.framework */,
+				369ED24613FF2556000707FA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		369ED24613FF2556000707FA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				369ED24713FF2556000707FA /* AppKit.framework */,
+				369ED24813FF2556000707FA /* CoreData.framework */,
+				369ED24913FF2556000707FA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		369ED24A13FF2556000707FA /* NotificationPeek */ = {
+			isa = PBXGroup;
+			children = (
+				369ED25613FF2572000707FA /* NotificationPeek.h */,
+				369ED25713FF2572000707FA /* NotificationPeek.m */,
+				369ED25B13FF259C000707FA /* NotificationPanelController.h */,
+				369ED25C13FF259C000707FA /* NotificationPanelController.m */,
+				369ED25913FF258B000707FA /* NotificationPanel.xib */,
+				369ED24B13FF2556000707FA /* Supporting Files */,
+			);
+			path = NotificationPeek;
+			sourceTree = "<group>";
+		};
+		369ED24B13FF2556000707FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				369ED24C13FF2556000707FA /* NotificationPeek-Info.plist */,
+				369ED24D13FF2556000707FA /* InfoPlist.strings */,
+				369ED25013FF2556000707FA /* NotificationPeek-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		369ED24013FF2556000707FA /* NotificationPeek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 369ED25313FF2556000707FA /* Build configuration list for PBXNativeTarget "NotificationPeek" */;
+			buildPhases = (
+				369ED23D13FF2556000707FA /* Sources */,
+				369ED23E13FF2556000707FA /* Frameworks */,
+				369ED23F13FF2556000707FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationPeek;
+			productName = NotificationPeek;
+			productReference = 369ED24113FF2556000707FA /* NotificationPeek.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		369ED23813FF2555000707FA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 369ED23B13FF2555000707FA /* Build configuration list for PBXProject "NotificationPeek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 369ED23613FF2555000707FA;
+			productRefGroup = 369ED24213FF2556000707FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				369ED24013FF2556000707FA /* NotificationPeek */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		369ED23F13FF2556000707FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369ED24F13FF2556000707FA /* InfoPlist.strings in Resources */,
+				369ED25A13FF258C000707FA /* NotificationPanel.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		369ED23D13FF2556000707FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				369ED25813FF2572000707FA /* NotificationPeek.m in Sources */,
+				369ED25D13FF259C000707FA /* NotificationPanelController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		369ED24D13FF2556000707FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				369ED24E13FF2556000707FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		369ED25113FF2556000707FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		369ED25213FF2556000707FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		369ED25413FF2556000707FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NotificationPeek/NotificationPeek-Prefix.pch";
+				INFOPLIST_FILE = "NotificationPeek/NotificationPeek-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		369ED25513FF2556000707FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NotificationPeek/NotificationPeek-Prefix.pch";
+				INFOPLIST_FILE = "NotificationPeek/NotificationPeek-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		369ED23B13FF2555000707FA /* Build configuration list for PBXProject "NotificationPeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369ED25113FF2556000707FA /* Debug */,
+				369ED25213FF2556000707FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		369ED25313FF2556000707FA /* Build configuration list for PBXNativeTarget "NotificationPeek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369ED25413FF2556000707FA /* Debug */,
+				369ED25513FF2556000707FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 369ED23813FF2555000707FA /* Project object */;
+}

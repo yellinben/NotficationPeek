@@ -8,6 +8,10 @@
 
 #import "NotificationPanelController.h"
 
+@interface NotificationPanelController (Private)
+- (BOOL)isNotificationExcluded:(NSNotification *)notification;
+@end
+
 @implementation NotificationPanelController
 
 - (id)initWithWindow:(NSWindow *)window
@@ -15,6 +19,11 @@
     self = [super initWithWindow:window];
     if (self) {
         notifications = [[NSMutableArray alloc] init];
+        excludeFilter = [[NSMutableArray alloc] init];
+        
+        [excludeFilter addObject:@"NSView"];
+        [excludeFilter addObject:@"NSWindow"];
+        [excludeFilter addObject:@"NSApplication"];
     }
     
     return self;
@@ -33,9 +42,20 @@
 }
 
 - (void)notificationPosted:(NSNotification *)notification {
-    [notifications addObject:notification];
-    [notificationTable reloadData];
-    [infoTable reloadData];
+    if (![self isNotificationExcluded:notification]) {
+        [notifications addObject:notification];
+        [notificationTable reloadData];
+        [infoTable reloadData];
+    }
+}
+
+- (BOOL)isNotificationExcluded:(NSNotification *)notification {
+    for (NSString *filterItem in excludeFilter) {
+        if ([[notification name] hasPrefix:filterItem]) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 - (IBAction)clear:(id)sender {

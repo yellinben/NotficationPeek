@@ -13,6 +13,7 @@
     IBOutlet NSTableView *infoTable;
     
     NSMutableArray *notifications;
+    NSMutableArray *excludeFilter;
 }
 
 - (IBAction)clear:(id)sender;

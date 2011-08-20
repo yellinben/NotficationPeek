@@ -24,6 +24,10 @@
         [excludeFilter addObject:@"NSView"];
         [excludeFilter addObject:@"NSWindow"];
         [excludeFilter addObject:@"NSApplication"];
+        [excludeFilter addObject:@"NSSplitView"];
+        [excludeFilter addObject:@"NSMenu"];
+        [excludeFilter addObject:@"NSTableView"];
+        [excludeFilter addObject:@"NSThread"];
     }
     
     return self;

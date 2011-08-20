@@ -9,6 +9,8 @@
 #import "NotificationPeek.h"
 #import "NotificationPanelController.h"
 
+// Thank You MegaZoomer
+// https://github.com/mattmatt/megazoomer
 @interface NSMenu(TopSecretMethods)
 - (NSString *)_menuName;
 @end
@@ -31,6 +33,8 @@
     return self;
 }
 
+// Thank You MegaZoomer
+// https://github.com/mattmatt/megazoomer
 + (NSMenu *)windowMenu {
 	NSMenu *mainMenu = [NSApp mainMenu];
     NSEnumerator *menuEnumerator = [[mainMenu itemArray] objectEnumerator];
@@ -44,20 +48,8 @@
     return windowMenu;
 }
 
-/*+ (NSMenuItem *)notificationMenuItem {
-	NSMenu *windowMenu = [self windowMenu];
-    
-    int notificationItemIndex = [windowMenu indexOfItemWithTarget:nil andAction:@selector(openNotifications:)];
-    NSMenuItem *notificationMenuItem = nil;
-    if (notificationItemIndex >= 0) {
-        [windowMenu itemAtIndex:notificationItemIndex];
-    }
-    if (notificationMenuItem == nil) {
-        notificationMenuItem = [windowMenu itemWithTitle:@"Notification"];
-    }
-    return notificationMenuItem;
-}*/
-
+// Thank You MegaZoomer
+// https://github.com/mattmatt/megazoomer
 - (void)insertMenu {
 	NSMenu *windowMenu = [[self class] windowMenu];
     
